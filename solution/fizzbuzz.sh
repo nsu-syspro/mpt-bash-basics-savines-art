@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 for ((i=1; i<($1+1); i++)); do
 	if [ $((i % 15)) -eq 0 ]; then
 		echo "Fizz Buzz"

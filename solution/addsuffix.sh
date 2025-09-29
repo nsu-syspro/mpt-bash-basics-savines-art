@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 suf="$1"
 for f in "$@" ; do
 	if [ $f != $1 ]; then
