@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+lst=("$@")
+for f in "${!lst[@]}"; do
+	if [ "$f" -ne 0 ]; then
+		mv "${lst[$f]}" "${lst[$f]}$1"
+	fi	
+done
+
