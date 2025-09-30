@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 lst=()
-f="$@"
+f="$(cat "$@")"
 while p= read -r l; do
 	lst+=("$l")
 done < "$f"
