@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 lst=()
-while p= read -r l; do
+while p='' read -r l; do
 	lst+=("$l")
 done
 len="${#lst[@]}"
