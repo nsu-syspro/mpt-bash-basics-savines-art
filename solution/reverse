@@ -4,6 +4,6 @@ while p= read -r l; do
 	lst+=("$l")
 done
 len="${#lst[@]}"
-for ((i="$len"; i>=0; i--)); do
+for ((i="$len"-1; i>=0; i--)); do
 	echo "${lst[$i]}"
 done	
