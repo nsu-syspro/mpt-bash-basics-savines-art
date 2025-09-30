@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 lst=()
-f="$(cat "$@")"
 while p= read -r l; do
 	lst+=("$l")
-done < "$f"
+done
 len="${#lst[@]}"
 for ((i="$len"; i>=0; i--)); do
 	echo "${lst[$i]}"
